@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "ebd68eaa-8cc2-43b1-9c1a-334f4c2f926b",
+		"name": "first_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20427719"
+	},
+	"item": [
+		{
+			"name": "Get_data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/courses/id/56"
+			},
+			"response": []
+		},
+		{
+			"name": "Get_By_Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8000/getId/53"
+			},
+			"response": []
+		},
+		{
+			"name": "get_Update_Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"53\",\n      \"name\": \"Understanding programming through recursion\",\n      \"logo\": \"http://bit.do/recursion-png\",\n      \"notes\": null,\n      \"days_to_complete\": \"45\",\n      \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n      \"type\": \"html\",\n      \"course_type\": null,\n      \"lang_available\": [\n         \"en\"\n      ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/courses/Update/53"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"53\",\n      \"name\": \"Understanding programming through recursion\",\n      \"logo\": \"http://bit.do/recursion-png\",\n      \"notes\": null,\n      \"days_to_complete\": \"45\",\n      \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n      \"type\": \"html\",\n      \"course_type\": null,\n      \"lang_available\": [\n         \"en\"\n      ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/courses/delete/53"
+			},
+			"response": []
+		},
+		{
+			"name": "post_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": \"72\",\n        \"name\": \"English Movies\",\n        \"logo\": \"https://bit.ly/2A2uqd7\",\n        \"notes\": null,\n        \"days_to_complete\": \"30\",\n        \"short_description\": \"Find list of English movies to watch\",\n        \"type\": \"html\",\n        \"course_type\": null,\n        \"lang_available\": [\n            \"en\"\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/courses/post"
+			},
+			"response": []
+		}
+	]
+}
